@@ -18,7 +18,21 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
-
+  
+<distributionManagement>  
+	<repository>
+		<id>nexus</id>
+		<name>Ashok IT Releases Nexus Repo</name>
+		<url>http://43.204.23.201:8081/repository/First-MVN-Hosted/</url>
+	</repository>
+	
+	<snapshotRepository>
+		<id>nexus</id>
+		<name>Ashok IT Snapshots Nexus Repo</name>
+		<url>http://43.204.23.201:8081/repository/First-MVN-Hosted/</url>
+	</snapshotRepository>	
+</distributionManagement>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
